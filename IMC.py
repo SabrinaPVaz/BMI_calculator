@@ -11,22 +11,16 @@ while True:
 
     elif 17 > imc < 18.4:
         print('Resultado: Abaixo do peso.')   
-
     elif 18.5 > imc < 24.9:
         print('Resultado: Peso normal.')
-
     elif 25 > imc < 29.9:
         print('Resultado: Acima do peso.')
-
     elif 30 > imc < 34.9:
         print('Resultado: Obesidade Grau I.')
-
     elif 35 > imc < 40:
         print('Resultado: Obesidade Grau II.')
-
     elif imc > 40:
         print('Resultado: Obesidade Grau III.')
-
     saída = input('Você deseja calcular novamente? [S/N]: ').strip().upper()[0]
     if 'N' in saída:
         break
