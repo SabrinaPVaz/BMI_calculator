@@ -5,10 +5,11 @@ while True:
     peso = float(input('Digite o seu peso: '))
     altura = float(input('Digite a sua altura em metros: '))
     imc = peso / (altura ** 2)
+   
     print(f'O seu IMC é: {imc:.1f}.')
+   
     if 16 > imc < 16.9:
         print('Resultado: Muito abaixo do peso.')
-
     elif 17 > imc < 18.4:
         print('Resultado: Abaixo do peso.')   
     elif 18.5 > imc < 24.9:
@@ -21,6 +22,8 @@ while True:
         print('Resultado: Obesidade Grau II.')
     elif imc > 40:
         print('Resultado: Obesidade Grau III.')
+    
     saída = input('Você deseja calcular novamente? [S/N]: ').strip().upper()[0]
+    
     if 'N' in saída:
         break
